@@ -1,0 +1,13 @@
+@import "../../assets/styles/scss/variables";
+
+main {
+  .content {
+    @extend %display-flex-row-center;
+
+    p {
+      font-weight: $font-weigth-semi-bold;
+      font-size: 3rem;
+      color: $grey-itens-aside;
+    }
+  }
+}

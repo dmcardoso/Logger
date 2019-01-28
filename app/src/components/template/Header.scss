@@ -1,0 +1,47 @@
+@import "../../assets/styles/scss/variables";
+
+header {
+  grid-area: navigation;
+  height: 60px;
+  background-color: $bk-color-aside;
+  width: 100%;
+  border-left: $border-color-aside;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    width: calc(100% - 200px);
+    color: $active-itens-aside;
+    @extend %ellipsis-text;
+  }
+
+  .actions {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    i:hover{
+      cursor: pointer;
+    }
+  }
+
+  .actions::after {
+    content: none;
+  }
+
+}
+
+header::after {
+  content: none;
+}
+
+
+header.home-scale {
+  transform: scale(0);
+  transition: .4s;
+}

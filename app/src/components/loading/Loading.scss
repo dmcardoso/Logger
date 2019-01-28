@@ -1,0 +1,31 @@
+@import "../../assets/styles/scss/variables";
+
+.entire {
+  background-color: $bk-color-aside;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    width: auto;
+    max-width: 480px;
+    max-height: 480px;
+    height: auto;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+
+  @keyframes slide {
+    from {
+      transform: rotate(0deg);
+      width: 360px;
+    }
+    to {
+      transform: rotate(360deg);
+      width: 480px;
+    }
+  }
+}

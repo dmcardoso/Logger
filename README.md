@@ -1,2 +1,3 @@
 # Logger
-Logger de depuração de aplicações
+
+Aplicativo para depurar aplicações

@@ -1,0 +1,72 @@
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 0;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+  font-family: $font;
+  font-size: 1rem;
+}
+
+/*Auto clear*/
+div:after,
+header:after,
+section:after,
+article:after,
+aside:after,
+form:after,
+menu:after,
+nav:after,
+ul:after,
+ol:after,
+li:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+::-moz-selection {
+  background: #BBB;
+  color: #222;
+}
+
+::selection {
+  background: #BBB;
+  color: #222;
+}
+
+html {
+  font-size: $font-size-rem;
+  font-family: $font;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

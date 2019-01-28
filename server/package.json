@@ -1,0 +1,34 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "Servidor do Logger de depuração e erros",
+  "main": "./server.js",
+  "private": true,
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "consign": "0.1.6",
+    "cors": "2.8.4",
+    "express": "4.16.3",
+    "knex": "0.15.2",
+    "node-watch": "^0.6.0",
+    "read-cache": "^1.0.0",
+    "sqlite3": "4.0.6",
+    "yup": "^0.26.7",
+    "socket.io": "^2.2.0",
+    "node-notifier": "^5.3.0"
+  },
+  "scripts": {
+    "start-server": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/dmcardoso/logger.git"
+  },
+  "keywords": [],
+  "author": "Daniel Moreira Cardoso",
+  "license": "MIT",
+  "homepage": "./",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

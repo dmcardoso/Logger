@@ -1,0 +1,55 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "Desktop do Logger de depuração e erros",
+  "main": "./main.js",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "build-electron": "build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/dmcardoso/logger.git"
+  },
+  "keywords": [],
+  "author": "Daniel Moreira Cardoso",
+  "license": "MIT",
+  "homepage": "./",
+  "devDependencies": {
+    "electron": "^4.0.2",
+    "electron-builder": "^20.38.5"
+  },
+  "build": {
+    "extends": null,
+    "appId": "com.electron.logger",
+    "productName": "Logger",
+    "directories": {
+      "buildResources": "src",
+      "output": "dist"
+    },
+    "asar": false,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "assets/icons/256x256.ico"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}

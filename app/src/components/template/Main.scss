@@ -1,0 +1,14 @@
+@import "../../assets/styles/scss/variables";
+
+main {
+  background-color: $bk-color-main;
+  grid-area: $main-grid-area;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "navigation navigation" "content content";
+
+  .content {
+    grid-area: content;
+  }
+}

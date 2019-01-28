@@ -1,0 +1,81 @@
+@import "../../assets/styles/scss/variables";
+
+aside {
+  width: $aside-wdth;
+  background-color: $bk-color-aside;
+  grid-area: $aside-grid-area;
+  display: flex;
+  max-height: 100vh;
+  overflow: hidden;
+  height: 100vh;
+  flex-direction: column;
+  padding: 40px 15px;
+
+  .btn {
+    font-family: $font;
+    height: 45px;
+    min-height: 45px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $white-color;
+    border: none;
+    outline: none;
+  }
+
+  .btn.btn-new {
+    width: $width-itens-aside;
+    background-color: $blue-button;
+    border-radius: 6px;
+  }
+
+  .btn-new:hover {
+    cursor: pointer;
+  }
+
+  .btn-new:active {
+    background-color: $blue-button-new-active;
+    border-radius: 6px;
+  }
+
+  ul.projects {
+    display: flex;
+    flex-direction: column;
+    width: 108%;
+    margin-top: 25px;
+    height: 100%;
+    overflow: auto;
+
+    .project {
+      width: $width-itens-aside;
+      color: $white-color;
+      display: flex;
+      padding-left: 15px;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 0.9rem;
+      padding-right: 13px;
+
+      span {
+        padding-top: calc(45px / 2 - 20px / 2);
+        height: 100%;
+        width: 100%;
+        @extend %ellipsis-text;
+      }
+    }
+
+    .project:hover {
+      background-color: $grey-itens-aside;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .project:active {
+      background-color: $active-itens-aside;
+    }
+
+    .project.selected {
+      background-color: $active-itens-aside;
+      border-radius: 6px;
+    }
+  }
+}

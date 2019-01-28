@@ -1,0 +1,54 @@
+@import '../../assets/styles/scss/variables';
+
+.container-log {
+  width: 99%;
+  overflow: auto;
+  height: calc(100vh - 72px);
+  position: relative;
+  background-color: $bk-color-aside;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  color: white;
+  font-family: $font;
+
+  hr:nth-of-type(1) {
+    display: none;
+  }
+
+  .btn {
+    font-family: $font;
+    height: 45px;
+    min-height: 45px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $white-color;
+    border: none;
+    background-color: $grey-itens-aside;
+    outline: none;
+    position: fixed;
+    bottom: 15px;
+    right: 18px;
+    text-align: center;
+    width: $width-itens-aside / 1.5;
+    display: none;
+    border-radius: 6px;
+    padding-left: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 13px;
+  }
+
+  .btn:hover {
+    background-color: $blue-button;
+    cursor: pointer;
+  }
+
+  .btn:active {
+    background-color: $blue-button-new-active;
+  }
+}
+
+.container-log:hover .btn {
+  display: flex;
+}

@@ -1,0 +1,43 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "Aplicação do Logger de depuração e erros",
+  "private": true,
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-render-html": "^0.6.0",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "2.1.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "axios": "^0.18.0"
+  },
+  "scripts": {
+    "start-react": "react-scripts start",
+    "build-react": "react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/dmcardoso/logger.git"
+  },
+  "keywords": [],
+  "author": "Daniel Moreira Cardoso",
+  "license": "MIT",
+  "homepage": "./",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

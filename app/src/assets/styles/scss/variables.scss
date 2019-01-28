@@ -1,0 +1,42 @@
+$font: 'Raleway', sans-serif;
+$font-size-rem: 20px;
+$bk-color-main: #282A3A;
+$bk-color-aside: #1E1F2B;
+$border-color-aside: 1px solid #36374B;
+$aside-grid-area: aside;
+$main-grid-area: main;
+$grid-areas: 'aside main';
+$font-weigth-regular: 400;
+$font-weigth-medium: 500;
+$font-weigth-semi-bold: 600;
+$font-weigth-bold: 700;
+
+$aside-wdth: 200px;
+$white-color: #f5f5f5;
+$blue-button: #1A73E8;
+$width-itens-aside: 170px;
+$blue-button-new-active: #1A81FF;
+$grey-itens-aside: #424249;
+$border-itens-aside: 1px solid #424249;
+$active-itens-aside: #616163;
+
+$center: center;
+
+$width-tab-project: 150px;
+$width-box-close-icon: 35px;
+$hover-close: #D52A29;
+$width-calc-name-project: $width-tab-project - $width-box-close-icon;
+/////////////////////////////////////////Extend
+%display-flex-row-center{
+  display: flex;
+  justify-content: $center;
+  align-items: $center;
+  text-align: $center;
+  flex-direction: row;
+}
+
+%ellipsis-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

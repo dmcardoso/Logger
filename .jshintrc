@@ -1,0 +1,8 @@
+{
+  "esversion": 6,
+  "boss": true,
+  "multistr": true,
+  "validthis": true,
+  "sub": true,
+  "laxbreak": true
+}
